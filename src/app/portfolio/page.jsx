@@ -7,7 +7,7 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    color: "from-red-300 to-blue-300",
+    color: "bg-black",
     title: "Pagina web en Wordpress",
     desc: "Pagina web creada en wordpress para la compañia Marathon truck & trailers establecida en miami florida",
     img: "/marathoncap.jpeg",
@@ -15,27 +15,27 @@ const items = [
   },
   {
     id: 2,
-    color: "from-blue-300 to-violet-300",
+    color: "bg-black",
     title: "Blog pequeño en django",
     desc: "Sitio tipo blog creado para fotografo profesional alex villae. creada en React.",
     img: "/jfhdf.png",
-    link: "https://lama.dev",
+    link: "",
   },
   {
     id: 3,
-    color: "from-violet-300 to-purple-300",
-    title: "Pagina Web de servicios",
+    color: "bg-black",
+    title: "Pagina Web de servicios ",
     desc: "Pagina web para la empresa de servicios de auxilios viales y emergencias. Creada en django.",
     img: "/quality2.jpeg",
     link: "https://qualitylugoservicesllc.com/",
   },
   {
     id: 4,
-    color: "from-purple-300 to-red-300",
+    color: "bg-black",
     title: "Pagina Web de Servicios",
     desc: "Rockwell empresa basada en miami florida. Creada en Wordpress.",
     img: "/rockwell.jpeg",
-    link: "https://lama.dev",
+    link: "https://www.rockwellfleets.com/",
   },
 ];
 
@@ -53,7 +53,7 @@ const PortfolioPage = () => {
       transition={{ duration: 1 }}
     >
       <div className="h-[600vh] relative" ref={ref}>
-        <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
+        <div className=" bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent w-screen h-[calc(100vh-6rem)] flex items-center justify-center text-8xl text-center">
           Mis trabajos
         </div>
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
@@ -75,7 +75,7 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-blue-500 text-white hover:bg-black font-semibold m-4 rounded">See Demo</button>
                   </Link>
                 </div>
               </div>
@@ -83,14 +83,14 @@ const PortfolioPage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl">Tiene algun Proyecto?</h1>
+      <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center bg-black">
+        <h1 className="text-6xl bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent">Tiene algun Proyecto?</h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
             transition={{ duration: 8, ease: "linear", repeat: Infinity }}
             viewBox="0 0 300 300"
-            className="w-64 h-64 md:w-[500px] md:h-[500px] "
+            className="w-64 h-64 md:w-[600px] md:h-[500px] "
           >
             <defs>
               <path
@@ -98,15 +98,15 @@ const PortfolioPage = () => {
                 d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
               />
             </defs>
-            <text fill="#000">
-              <textPath xlinkHref="#circlePath" className="text-xl">
+            <text fill="#ffffff">
+              <textPath xlinkHref="#circlePath" className="text-2xl">
                 Front-end Developer Freelancer
               </textPath>
             </text>
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-blue-700 text-white rounded-full flex items-center justify-center"
           >
             Contactame
           </Link>
