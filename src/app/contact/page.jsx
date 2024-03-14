@@ -65,11 +65,11 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-gray-200 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-blue-500 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Hola VpeDev,</span>
           <textarea
-            rows={6}
+            rows={1}
             className="bg-transparent border-b-2 border-b-black outline-none resize-none"
             name="user_message"
           />
@@ -80,7 +80,13 @@ const ContactPage = () => {
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
           <span>Gracias</span>
-          <button className="bg-light-blue-200 rounded font-semibold text-black hover:bg-light-blue-600 p-4">
+          <button 
+            className="bg-transparent rounded font-semibold text-black hover:bg-blue-600 p-4"
+            type="submit" 
+            onClick={() => 
+              form.current.action = "mailto:vpedev@gmail.com"
+            }
+          >
             enviar
           </button>
           {success && (
