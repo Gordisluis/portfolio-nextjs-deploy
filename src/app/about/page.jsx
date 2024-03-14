@@ -38,7 +38,7 @@ const AboutPage = () => {
               className="w-35 h-35 rounded-full object-cover"
             />
             {/* BIOGRAPHY TITLE */}
-            <h1 className="font-bold text-2xl">BIOGRAFIA</h1>
+            <h1 className="font-bold text-2xl bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent">BIOGRAFIA</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
               Soy un profesional de la informatica dedicado y apasionado por la programacion.
@@ -50,7 +50,7 @@ const AboutPage = () => {
               
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic">
+            <span className="italic bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent">
               Mi camino es el de la tecnología.
             </span>
             
@@ -67,13 +67,13 @@ const AboutPage = () => {
             >
               <path
                 d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                stroke="#000000"
+                stroke="#ffffff"
                 strokeWidth="1"
               ></path>
-              <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+              <path d="M12 6V14" stroke="#ffffff" strokeWidth="1"></path>
               <path
                 d="M15 11L12 14L9 11"
-                stroke="#000000"
+                stroke="#ffffff"
                 strokeWidth="1"
               ></path>
             </motion.svg>
@@ -95,48 +95,48 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 JavaScript
               </div>
             
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 React.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Next.js
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Tailwind CSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 MongoDB
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Node.js
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Express.js
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Vite
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Django
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Python
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Flask
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Firebase
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Git
               </div>
               
@@ -151,16 +151,17 @@ const AboutPage = () => {
               xmlns="http://www.w3.org/2000/svg"
               width={50}
               height={50}
+              
             >
               <path
                 d="M5 15C5 16.8565 5.73754 18.6371 7.05029 19.9498C8.36305 21.2626 10.1435 21.9999 12 21.9999C13.8565 21.9999 15.637 21.2626 16.9498 19.9498C18.2625 18.6371 19 16.8565 19 15V9C19 7.14348 18.2625 5.36305 16.9498 4.05029C15.637 2.73754 13.8565 2 12 2C10.1435 2 8.36305 2.73754 7.05029 4.05029C5.73754 5.36305 5 7.14348 5 9V15Z"
-                stroke="#000000"
+                stroke="#ffffff"
                 strokeWidth="1"
               ></path>
-              <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
+              <path d="M12 6V14" stroke="#ffffff" strokeWidth="1"></path>
               <path
                 d="M15 11L12 14L9 11"
-                stroke="#000000"
+                stroke="#ffffff"
                 strokeWidth="1"
               ></path>
             </motion.svg>
@@ -175,7 +176,7 @@ const AboutPage = () => {
               initial={{ x: "-300px" }}
               animate={isExperienceRefInView ? { x: "0" } : {}}
               transition={{ delay: 0.2 }}
-              className="font-bold text-2xl"
+              className="font-bold text-2xl bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent"
             >
               EXPERIENCIAS
             </motion.h1>
@@ -190,7 +191,7 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Desarrollador web - Freelancer
                   </div>
                   {/* JOB DESC */}
@@ -202,7 +203,7 @@ const AboutPage = () => {
                     2022 - November
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
                     Marathonttr
                   <span><link href="https://www.marathonttr.com/?gad_source=1&gclid=CjwKCAjw17qvBhBrEiwA1rU9w2_pl852wBz-3_yXdhbnp_37ak3ZMAR5jigS4Z040DSeDd_UmTEE6BoCOsoQAvD_BwE"/></span><link href="https://www.marathonttr.com/?gad_source=1&gclid=CjwKCAjw17qvBhBrEiwA1rU9w2_pl852wBz-3_yXdhbnp_37ak3ZMAR5jigS4Z040DSeDd_UmTEE6BoCOsoQAvD_BwE"/>
                   </div>
@@ -210,9 +211,9 @@ const AboutPage = () => {
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-blue-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-600 bg-blue-600 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
@@ -225,15 +226,15 @@ const AboutPage = () => {
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-blue-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-600 bg-blue-600 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent p-3 font-semibold rounded-b-lg rounded-s-lg">
                     Desarrollador web - Freelancer
                   </div>
                   {/* JOB DESC */}
@@ -245,7 +246,7 @@ const AboutPage = () => {
                     2023 - enero{" "}
                   </div>
                   {/* JOB COMPANY */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
                     QualityLugoservices
                   </div>
                 </div>
@@ -255,7 +256,7 @@ const AboutPage = () => {
                 {/* LEFT */}
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  <div className="bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent p-3 font-semibold rounded-b-lg rounded-s-lg">
                   Desarrollador web{" - Freelancer "}
                   </div>
                   {/* JOB DESC */}
@@ -266,13 +267,17 @@ const AboutPage = () => {
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2019 - agosto{" "}
                   </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
+                    Rockwell solutions
+                  </div>
                 </div>
                 {/* CENTER */}
                 <div className="w-1/6 flex justify-center">
                   {/* LINE */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  <div className="w-1 h-full bg-blue-600 rounded relative">
                     {/* LINE CIRCLE */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white -left-2"></div>
+                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-600 bg-blue-600 -left-2"></div>
                   </div>
                 </div>
                 {/* RIGHT */}
