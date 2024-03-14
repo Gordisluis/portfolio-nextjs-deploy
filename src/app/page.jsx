@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Homepage = () => {
   return (
@@ -17,7 +18,7 @@ const Homepage = () => {
           <Image src="/herofinal3.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
+        <div className="h-1/2 bg-black text-white lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">
             Creando soluciones digitales para tu negocio.
@@ -33,12 +34,12 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            <Link href="/portfolio" className="border-b-2 border-blue-500">
               Ver Proyectos
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
+            </Link>
+            <Link href="/contact" className="border-b-2 border-blue-500">
               Contactarme
-            </button>
+            </Link>
           </div>
         </div>
       </div>
