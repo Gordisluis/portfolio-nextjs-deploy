@@ -21,7 +21,9 @@ const Homepage = () => {
         <div className="h-1/2 bg-black text-white lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
           <h1 className="text-4xl md:text-6xl font-bold">
-            Creando soluciones digitales para tu negocio.
+            <span className="bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent">
+              Creando soluciones digitales para tu negocio.
+            </span>
           </h1>
           {/* DESC */}
           <p className="md:text-xl">
@@ -35,10 +37,14 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
             <Link href="/portfolio" className="border-b-2 border-blue-500">
-              Ver Proyectos
+              <span className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">
+                Ver Proyectos
+              </span>
             </Link>
             <Link href="/contact" className="border-b-2 border-blue-500">
-              Contactarme
+              <span className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">
+                Contactarme
+              </span>
             </Link>
           </div>
         </div>
