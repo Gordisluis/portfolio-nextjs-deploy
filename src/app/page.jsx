@@ -15,7 +15,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/herofinal3.png" alt="" fill className="object-contain" />
+          <Image src="/herofinal3-removebg-preview.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 bg-black text-white lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
