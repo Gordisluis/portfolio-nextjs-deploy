@@ -50,7 +50,7 @@ const AboutPage = () => {
               
             </p>
             {/* BIOGRAPHY QUOTE */}
-            <span className="italic bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent">
+            <span className="italic bg-gradient-to-r from-blue-500 via-blue-100 to-white bg-clip-text text-transparent">
               Mi camino es el de la tecnología.
             </span>
             
@@ -79,10 +79,10 @@ const AboutPage = () => {
             </motion.svg>
           </div>
           {/* SKILLS CONTAINER */}
-          <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
+          <div className="flex flex-col gap-13 justify-center" ref={skillRef}>
             {/* SKILL TITLE */}
             <motion.h1
-              initial={{ x: "-300px" }}
+              initial={{ x: "-200px" }}
               animate={isSkillRefInView ? { x: 0 } : {}}
               transition={{ delay: 0.2 }}
               className="font-bold text-2xl"
@@ -95,50 +95,72 @@ const AboutPage = () => {
               animate={isSkillRefInView ? { x: 0 } : {}}
               className="flex gap-4 flex-wrap"
             >
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-yellow-200">
                 JavaScript
               </div>
             
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-blue-600">
                 React.js
               </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-orange-400">
+                HTML
+              </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-blue-800">
+                CSS
+              </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-green-300">
+                Linux
+              </div>
+
               <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
                 Next.js
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-green-200">
                 Tailwind CSS
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                MongoDB
-              </div>
-              
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                Node.js
-              </div>
-              
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                Express.js
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                Vite
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                Django
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
-                Python
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-gray-500">
                 Flask
               </div>
               
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-green-600">
+                Node.js
+              </div>
+              
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-purple-500">
+                Express.js
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-violet-700">
+                Vite
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-green-900">
+                Django
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-blue-900">
+                Python
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-green-300">
+                MongoDB
+              </div>
+              
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-blue-700">
                 Firebase
               </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-black">
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-red-600">
                 Git
               </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-blue-600">
+                React native
+              </div>
+
+              <div className="rounded  p-2 text-sm cursor-pointer bg-blue-500 text-white hover:bg-orange-600">
+                MySql
+              </div>
+              
               
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -198,10 +220,10 @@ const AboutPage = () => {
                   <div className="p-3 text-sm italic">
                     me encarge del desarrollo de la pagina web para mi cliente donde se me solicito la herramientas wordpress.{" WORDPRESS "}
                   </div>
-                  {/* JOB DATE */}
+                  {/* JOB DATE 
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2022 - November
-                  </div>
+                  </div> */}
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
                     Marathonttr
@@ -241,10 +263,10 @@ const AboutPage = () => {
                   <div className="p-3 text-sm italic">
                   desarrollo de la pagina web destacandome en el manejo de las herramientas de desarrollo para llevar a cabo la vision de mi cliente. {" Django "}
                   </div>
-                  {/* JOB DATE */}
+                  {/* JOB DATE 
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2023 - enero{" "}
-                  </div>
+                    2023 - enero{" "} 
+                  </div> /*}
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
                     QualityLugoservices
@@ -263,10 +285,10 @@ const AboutPage = () => {
                   <div className="p-3 text-sm italic">
                     proveedor de soluciones digitales, aplicando tecnologías para cubrir las exigencias de mis clientes.{" React "}
                   </div>
-                  {/* JOB DATE */}
+                  {/* JOB DATE 
                   <div className="p-3 text-red-400 text-sm font-semibold">
                     2019 - agosto{" "}
-                  </div>
+                  </div> /*}
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-gradient-to-r from-blue-300 via-blue-200 to-blue-100 bg-clip-text text-transparent text-sm font-semibold w-fit">
                     Rockwell solutions

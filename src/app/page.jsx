@@ -14,7 +14,7 @@ const Homepage = () => {
     >
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative">
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative rounded-md">
           <Image src="/hero4.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
@@ -26,11 +26,11 @@ const Homepage = () => {
             </span>
           </h1>
           {/* DESC */}
-          <p className="md:text-xl">
-            Bienvenido a mi digital canvas, donde la innovación y la creatividad
+          <p className="md:text-xl flex text-semibold">
+            Bienvenido a mi canvas digital, donde la innovación y la creatividad
             convergen. Con una mirada en la austeridad y un gran dominio del
             código, mi portafolio muestra una colección de proyectos que
-            reflejan mi compromiso con la excelencia.
+            reflejan mi compromiso con la excelencia y la innovación.
 
             
           </p>
