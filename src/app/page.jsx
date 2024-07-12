@@ -15,7 +15,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/herofinal3-removebg-preview.png" alt="" fill className="object-contain" />
+          <Image src="/hero4.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
         <div className="h-1/2 bg-black text-white lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
@@ -37,12 +37,12 @@ const Homepage = () => {
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
             <Link href="/portfolio" className="border-b-2 border-blue-500">
-              <span className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-white bg-clip-text text-transparent">
                 Ver Proyectos
               </span>
             </Link>
             <Link href="/contact" className="border-b-2 border-blue-500">
-              <span className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-blue-200 to-white bg-clip-text text-transparent">
                 Contactarme
               </span>
             </Link>
