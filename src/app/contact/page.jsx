@@ -65,7 +65,7 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-blue-500 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-gray-600 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
         >
           <span>Hola VpeDev,</span>
           <textarea
@@ -81,7 +81,7 @@ const ContactPage = () => {
           />
           <span>Gracias</span>
           <button 
-            className="bg-transparent rounded font-semibold text-black hover:bg-blue-600 p-4"
+            className="bg-transparent w-90 rounded font-semibold text-black hover:bg-gray-700 p-2"
             type="submit" 
             onClick={() => 
               form.current.action = "mailto:vpedev@gmail.com"
